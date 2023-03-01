@@ -69,10 +69,10 @@ const Reviews = ({ productId }) => {
     content = (
       <p>
         {getIsError
-          ? getError?.data.message
+          ? getError?.data?.message
           : createError
-          ? createError?.data.message
-          : error?.data.message}
+          ? createError?.data?.message
+          : error?.data?.message}
       </p>
     );
   }

@@ -109,10 +109,10 @@ const AllUser = () => {
     content = (
       <p>
         {getIsError
-          ? getError?.data.message
+          ? getError?.data?.message
           : deleteIsError
-          ? deleteError?.data.message
-          : error?.data.message}
+          ? deleteError?.data?.message
+          : error?.data?.message}
       </p>
     );
   } else if (deleteIsSuccess || isSuccess) {

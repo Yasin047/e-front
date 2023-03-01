@@ -53,7 +53,7 @@ const AllProducts = () => {
     content = <Loading />;
   } else if (getIsError || deleteIsError) {
     content = (
-      <p>{getIsError ? getError?.data.message : deleteError?.data.message}</p>
+      <p>{getIsError ? getError?.data?.message : deleteError?.data?.message}</p>
     );
   } else if (deleteIsSuccess) {
     content = <p>{deleteData?.message}</p>;

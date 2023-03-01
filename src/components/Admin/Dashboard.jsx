@@ -90,10 +90,10 @@ const Dashboard = () => {
     content = (
       <p>
         {getProductIsError
-          ? getProductError?.data.message
+          ? getProductError?.data?.message
           : getOrderIsError
-          ? getOrderError?.data.message
-          : getUserError?.data.message}
+          ? getOrderError?.data?.message
+          : getUserError?.data?.message}
       </p>
     );
   }

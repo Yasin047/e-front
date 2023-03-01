@@ -38,7 +38,7 @@ const Resetpassword = () => {
     content = <p>{isSuccess ? data?.message : ""}</p>;
   } else if (isError || verifyIsError) {
     content = (
-      <p>{isError ? error?.data.message : verifyError?.data.message}</p>
+      <p>{isError ? error?.data?.message : verifyError?.data?.message}</p>
     );
   }
   const handleClick = async (e) => {

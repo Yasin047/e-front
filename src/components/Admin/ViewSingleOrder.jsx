@@ -31,7 +31,7 @@ const ViewSingleOrder = () => {
     content = <p>{updateData?.message}</p>;
   } else if (updateIsError || isError) {
     content = (
-      <p>{updateIsError ? updateError?.data.message : error?.data.message}</p>
+      <p>{updateIsError ? updateError?.data?.message : error?.data?.message}</p>
     );
   }
   const { order } = data || {};

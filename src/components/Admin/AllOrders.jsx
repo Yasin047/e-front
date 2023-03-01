@@ -67,7 +67,7 @@ const AllOrders = () => {
   if (getLoading) {
     content = <Loading />;
   } else if (getIsError) {
-    content = <p>{getError?.data.message}</p>;
+    content = <p>{getError?.data?.message}</p>;
   }
   return (
     <>

@@ -97,7 +97,7 @@ const EditProduct = () => {
   if (isSuccess) {
     content = <p>{data?.message}</p>;
   } else if (isError) {
-    content = <p>{error?.data.message}</p>;
+    content = <p>{error?.data?.message}</p>;
   }
 
   return (
