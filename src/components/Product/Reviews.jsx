@@ -66,15 +66,15 @@ const Reviews = ({ productId }) => {
   if (getIsLoading || createIsLoading || isLoading) {
     content = <Loading />;
   } else if (getIsError || createIsError || isError) {
-    // content = (
-    //   <p>
-    //     {getIsError
-    //       ? getError?.data?.message
-    //       : createError
-    //       ? createError?.data?.message
-    //       : error?.data?.message}
-    //   </p>
-    // );
+    content = (
+      <p>
+        {getIsError
+          ? getError?.data?.message
+          : createError
+          ? createError?.data?.message
+          : error?.data?.message}
+      </p>
+    );
   }
 
   return (

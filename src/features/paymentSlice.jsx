@@ -4,7 +4,9 @@ import Cookies from "js-cookie";
 
 export const paymentSlice = createApi({
   reducerPath: "Payment",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:4000/api" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://helpful-vest-fawn.cyclic.app/api",
+  }),
   tagTypes: ["PAYMENT"],
   endpoints: (builder) => ({
     getPublishableKey: builder.query({
