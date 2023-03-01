@@ -44,7 +44,7 @@ const AllReviews = () => {
     content = <p>{data?.message}</p>;
   } else if (getIsError || isError) {
     content = (
-      <p>{getIsError ? getError?.data.message : error?.data.message}</p>
+      <p>{getIsError ? getError?.data?.message : error?.data?.message}</p>
     );
   }
   const columns = [
