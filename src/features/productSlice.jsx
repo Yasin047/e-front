@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 export const productSlice = createApi({
   reducerPath: "Product",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://helpful-vest-fawn.cyclic.app/api",
+    baseUrl: "http://localhost:4000/api",
   }),
   tagTypes: ["PRODUCT"],
   endpoints: (builder) => ({
